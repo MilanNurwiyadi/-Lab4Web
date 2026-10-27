@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #1f5faa;
+            width: 870px;
+        }
+        .about-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .about-bio h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .about-bio p {
+            line-height: 26px;
+            color: #666;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-badge {
+            background-color: #e2eeff;
+            color: #1f5faa;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+        
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html" class="active">About</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+
+        <section id="wrapper">
+            <section id="main" style="width: 100%;">
+                <div class="about-header">
+                    <img src="https://dummyimage.com/150/1f5faa/fff.png" alt="" class="about-avatar">
+                    <div class="about-bio">
+                        <h2>Halo, Selamat Datang!</h2>
+                        <p>Saya adalah seorang mahasiswa aktif Program Studi Teknik Informatika di Universitas Pelita Bangsa yang memiliki minat besar dalam dunia pengembangan web, antarmuka pengguna (UI), dan sistem digital berbasis web.</p>
+                        <div class="skills-container">
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Git & GitHub</span>
+                        </div>
+                    </div>
+                </div>               
+            </section>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
